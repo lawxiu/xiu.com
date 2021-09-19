@@ -5,12 +5,16 @@
   <meta charset="UTF-8">
   <title>法懿</title>
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <script defer src="https://unpkg.com/css-paint-polyfill"></script>
-  <script defer src="https://unpkg.com/css-houdini-circles/dist/circles.js"></script>
+  <script src="https://unpkg.com/css-paint-polyfill"></script>
+  <script>
+    CSS.paintWorklet.addModule('https://unpkg.com/css-houdini-circles/dist/circles.js')
+    // CSS.paintWorklet.addModule("https://unpkg.com/css-houdini-circles/dist/circles.js")
+  </script>
   <link rel="stylesheet" href="./assets/style.css">
 </head>
 
 <body>
+  <div class="bg"></div>
   <section>
     <figure>
       <div>
