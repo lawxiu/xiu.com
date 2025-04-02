@@ -1,63 +1,53 @@
-html {
-  height: 100%;
-  width: 100%
-}
-  
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif
-}
-  
 .ie9 section {
-  display: none!important
+  display: none !important
 }
 
 .ie9 h1 {
   color: #000
 }
-  
+
 .bg {
   position: fixed;
   top: 0;
   left: 0;
   z-index: -1;
   background-color: whitesmoke;
-  background-image: linear-gradient(90deg, rgba(227,255,231,1) 0%, rgba(217,231,255,1) 100%);
+  background-image: linear-gradient(90deg, rgba(227, 255, 231, 1) 0%, rgba(217, 231, 255, 1) 100%);
   /* use css paint api to draw background: https://houdini.how/#demo-css-houdini-circles */
   width: 100vw;
   height: 100vh;
-  --colors: #f94144, #f3722c, #f8961e, #f9844a, #f9c74f, #90be6d, #43aa8b, #4d908e, #577590, #277da1, gold, plum, skyblue;;
-	--min-radius: 20;
-	--max-radius: 100;
-	--num-circles: 30;
-	--min-opacity: 10;
-	--max-opacity: 50;
-	background-image: paint(circles);
+  --colors: #f94144, #f3722c, #f8961e, #f9844a, #f9c74f, #90be6d, #43aa8b, #4d908e, #577590, #277da1, gold, plum, skyblue;
+  ;
+  --min-radius: 20;
+  --max-radius: 100;
+  --num-circles: 30;
+  --min-opacity: 10;
+  --max-opacity: 50;
+  background-image: paint(circles);
 }
-  
+
 @media screen and (max-width:640px) {
   body {
     background-size: auto
   }
 }
-  
+
 section {
   position: relative;
   max-width: 550px;
   margin-left: auto;
   margin-right: auto;
   padding: 10px;
-  padding-top: 50px
+  padding-top: 40px
 }
-  
+
 figure {
   text-align: center;
-  padding-bottom: 20px;
+  // padding-bottom: 20px;
   position: relative;
   border-bottom: 1px solid #ddd
 }
-  
+
 figure div {
   display: inline-block;
   border-radius: 50%;
@@ -96,7 +86,7 @@ a {
 }
 
 .links {
-  margin-top: 180px;
+  margin-top: 100px;
 }
 
 .links h5 {
