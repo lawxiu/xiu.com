@@ -6,9 +6,8 @@ import avatar from 'src/assets/avatar.jpg';
 ---
 
 <script>
-  import 'css-paint-polyfill';
   // @ts-expect-error paintWorklet is a new feature
-  CSS.paintWorklet.addModule('/circles.js');
+  CSS.paintWorklet?.addModule('/circles.js');
 </script>
 <div class="bg"></div>
 <section>
